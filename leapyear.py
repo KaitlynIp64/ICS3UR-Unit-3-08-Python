@@ -21,11 +21,11 @@ def main():
         print("That is not a valid input.")
 
     else:
-        if year_int % 4:
+        if year_int % 4 and year_int % 400:
             if year_int % 100:
                 print("That is a common year.")
             else:
-                print("That is a common year.")
+                print("That is a leap year.")
         else:
             print("That is a leap year.")
 
