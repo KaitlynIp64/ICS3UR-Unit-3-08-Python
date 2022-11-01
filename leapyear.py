@@ -13,13 +13,14 @@ def main():
     print("")
 
     # process & output
-    if year_int%4:
-        if year_int%100:
+    if year_int % 4:
+        if year_int % 100:
             print("That is a common year.")
         else:
             print("That is a common year.")
     else:
         print("That is a leap year.")
+
 
 if __name__ == "__main__":
     main()
