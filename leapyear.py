@@ -17,10 +17,6 @@ def main():
         year_int = int(year_int)
         print("That is a valid input.")
 
-    except ValueError:
-        print("That is not a valid input.")
-
-    else:
         if year_int % 4 and year_int % 400:
             if year_int % 100:
                 print("That is a common year.")
@@ -28,6 +24,12 @@ def main():
                 print("That is a leap year.")
         else:
             print("That is a leap year.")
+
+    except ValueError:
+        print("That is not a valid input.")
+
+    # output
+    print("\nDone.")
 
 
 if __name__ == "__main__":
