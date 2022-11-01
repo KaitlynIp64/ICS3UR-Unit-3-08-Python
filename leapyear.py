@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-# Created by: Mr. Coxall
-# Created on: Sep 2019
+# Created by: Kaitlyn Ip
+# Created on: Oct 2022
 # This program uses a nested if statement
 
 
