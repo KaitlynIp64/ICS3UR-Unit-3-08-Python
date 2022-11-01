@@ -9,17 +9,25 @@ def main():
     # this function uses a nested if statement
 
     # input
-    year_int = int(input("Enter the year: "))
+    year_int = input("Enter the year: ")
     print("")
 
     # process & output
-    if year_int % 4:
-        if year_int % 100:
-            print("That is a common year.")
-        else:
-            print("That is a common year.")
+    try:
+        year_int = int(year_int)
+        print("That is a valid input.")
+
+    except ValueError:
+        print("That is not a valid input.")
+
     else:
-        print("That is a leap year.")
+        if year_int % 4:
+            if year_int % 100:
+                print("That is a common year.")
+            else:
+                print("That is a common year.")
+        else:
+            print("That is a leap year.")
 
 
 if __name__ == "__main__":
