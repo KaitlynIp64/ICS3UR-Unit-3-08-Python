@@ -17,8 +17,8 @@ def main():
         year_int = int(year_int)
         print("That is a valid input.")
 
-        if year_int % 4 and year_int % 400:
-            if year_int % 100:
+        if year_int % 4 != 0 and year_int % 400 != 0:
+            if year_int % 100 != 0:
                 print("That is a common year.")
             else:
                 print("That is a leap year.")
